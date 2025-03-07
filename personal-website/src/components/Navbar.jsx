@@ -6,9 +6,6 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      {/* Logo */}
-      <div className="logo">Rafidan<span>Anwar</span></div>
-
       {/* Navigation Links */}
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
         <a href="#hero" onClick={() => setIsOpen(false)}>Home</a>

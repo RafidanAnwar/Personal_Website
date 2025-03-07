@@ -14,7 +14,7 @@ const Contact = () => {
           </a>
           <a href="https://wa.me/6285705937055" target="_blank" rel="noopener noreferrer" className="contact-item">
             <FaWhatsapp className="icon whatsapp" />
-            <span>+62 857-0593-7055</span>
+            <span>Rafidan Anwar</span>
           </a>
           <a href="https://github.com/RafidanAnwar" target="_blank" rel="noopener noreferrer" className="contact-item">
             <FaGithub className="icon github" />
