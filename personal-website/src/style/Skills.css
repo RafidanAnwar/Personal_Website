@@ -1,0 +1,114 @@
+/* Skills Section */
+.skills {
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.skills .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Title */
+.skills h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Grid Layout */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Skill Card */
+.skill-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 217, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: zoomIn 1s ease-in-out forwards;
+}
+
+/* Ikon */
+.skill-card .icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Skill Name */
+.skill-card p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Hover Effect */
+.skill-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 217, 255, 0.5);
+}
+
+.skill-card:hover .icon {
+    transform: rotate(10deg);
+}
+
+/* Animasi Fade-in */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animasi Zoom-in */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills h2 {
+        font-size: 2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+    }
+
+    .skill-card {
+        width: 120px;
+        height: 120px;
+    }
+}

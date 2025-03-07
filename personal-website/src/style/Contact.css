@@ -1,0 +1,113 @@
+/* Contact Section */
+.contact {
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact .container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Title */
+.contact h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Contact Description */
+.contact p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* Contact Icons */
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Contact Item */
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 217, 255, 0.2);
+}
+
+.contact-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 217, 255, 0.5);
+}
+
+/* Icons */
+.icon {
+    font-size: 1.8rem;
+    margin-right: 12px;
+}
+
+/* Icon Colors */
+.instagram {
+    color: #E1306C;
+}
+
+.whatsapp {
+    color: #25D366;
+}
+
+.github {
+    color: #ffffff;
+}
+
+.linkedin {
+    color: #0077B5;
+}
+
+/* Animasi */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact p {
+        font-size: 1rem;
+    }
+
+    .contact-item {
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+    }
+}

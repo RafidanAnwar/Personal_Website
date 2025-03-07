@@ -1,0 +1,138 @@
+/* Projects Section */
+.projects {
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.projects .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Title */
+.projects h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Loading */
+.loading {
+    color: #aaa;
+    font-size: 1.2rem;
+}
+
+/* Grid Layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Project Card */
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 217, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    max-width: 350px;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: zoomIn 1s ease-in-out forwards;
+}
+
+/* Project Title */
+.project-card h3 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Project Description */
+.project-card p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+/* Button */
+.project-card .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #00d9ff;
+    color: #0a0a0a;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.project-card .btn:hover {
+    background: #00a6c7;
+}
+
+/* GitHub Icon */
+.github-icon {
+    font-size: 1.3rem;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 217, 255, 0.5);
+}
+
+/* No Projects */
+.no-projects {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-top: 20px;
+}
+
+/* Animasi */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .projects h2 {
+        font-size: 2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}

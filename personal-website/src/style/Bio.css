@@ -1,0 +1,77 @@
+.bio {
+    text-align: center;
+    padding: 60px 20px;
+    background: #0a0a0a;
+    color: white;
+}
+
+.bio .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.bio h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00ffff;
+}
+
+.bio-content {
+    text-align: left;
+}
+
+.bio-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.bio-info strong {
+    color: #00ffff;
+}
+
+/* Animasi teks */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .bio .container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .bio-info p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .bio h2 {
+        font-size: 1.5rem;
+    }
+
+    .bio-info p {
+        font-size: 0.9rem;
+    }
+}
